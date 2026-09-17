@@ -9,6 +9,8 @@
 
 <body class="animals-page">
 
+    <!-- TIERÜBERSICHT -->
+
     <div id="animal-overview">
 
         <h1 class="animals-title">ANIMALS IN AUSTRALIA</h1>
@@ -102,15 +104,17 @@
     </div>
 
 
+    <!-- INFORMATIONSSEITE -->
+
     <div id="animal-information" style="display: none;">
 
         <div class="info-container">
 
-            <button class="back-button" onclick="backToAnimals()">
+            <button onclick="backToAnimals()" class="back-button">
                 ← BACK TO ANIMALS
             </button>
 
-            <h1 id="animal-name"></h1>
+            <h1 id="animal-name">Animal</h1>
 
             <img id="animal-image" src="" alt="Animal">
 
@@ -139,7 +143,7 @@
                 <p id="funfact"></p>
             </div>
 
-            <button class="back-button bottom-button" onclick="backToAnimals()">
+            <button onclick="backToAnimals()" class="back-button bottom-button">
                 ← BACK TO ANIMALS
             </button>
 
