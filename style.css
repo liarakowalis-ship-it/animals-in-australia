@@ -1,3 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* START PAGE */
+
+.hero {
+    min-height: 100vh;
+    background-image: url("IMG_0557.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    background: rgba(255, 248, 235, 0.92);
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #5c4632;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+button {
+    font-family: Arial, sans-serif;
+}
+
 .start-button {
     display: inline-block;
     background-color: #d6b98c;
@@ -12,4 +63,181 @@
 
 .start-button:hover {
     background-color: #c5a575;
+}
+
+
+/* ANIMALS PAGE */
+
+.animals-page {
+    background-color: #f3e8d3;
+    min-height: 100vh;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.animals-title {
+    color: #5c4632;
+    font-size: 42px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+
+/* EXACTLY 4 x 4 BUTTON GRID */
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.animal-card {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: scale(1.05);
+}
+
+.animal-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: block;
+}
+
+.animal-card span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #5c4632;
+}
+
+
+/* BUTTONS */
+
+.back-button {
+    display: inline-block;
+    background-color: #d6b98c;
+    color: #4b3828;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #c5a575;
+}
+
+
+/* ANIMAL INFORMATION */
+
+#animal-information {
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.info-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 248, 235, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.info-container > h1 {
+    text-align: center;
+    color: #5c4632;
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+#animal-image {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 25px auto 35px auto;
+}
+
+.info-section {
+    background-color: #f8eedf;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.info-section h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #5c4632;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.info-section ul {
+    margin-left: 25px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.fun-fact {
+    background-color: #ead5ae;
+}
+
+.bottom-button {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .animal-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .animals-page {
+        padding: 30px 15px;
+    }
+
+    .animals-title {
+        font-size: 30px;
+    }
+
+    .animal-card span {
+        font-size: 16px;
+    }
+
+    .info-container {
+        padding: 25px;
+    }
+
+    #animal-image {
+        width: 220px;
+        height: 220px;
+    }
 }
